@@ -1,0 +1,26 @@
+Steven Toub
+SE575-900
+Final Project README
+
+
+This project is composed of two applications, a client and a server.
+
+The server is composed of:
+  BlockChain.kt (the kotlin file that makes up most of the data classes for the back end)
+  JavaServer.java (the java file that handles client connections)
+  Admin.java (the java class that works in unison with the server class)
+  
+The client is composed of:
+  JavaClient.java (the java class that allows a client to communicate with the server)
+  
+I have included the gradle.build files for the server and client applications that I used to 
+build the applications and create jar files with. The client can be built as a regular java project
+but the server has to be a project that targets Kotlin JVM, as reflected in the build file. I used
+Intellij and its Kotlin plugin, and built both applications as gradle projects.
+
+The simplest method for running the applications is to pull the jar files and run them in the command line:
+
+java -jar PATH/Server.jar
+java -jar PATH/Client.jar
+
+The server must be spun up before any clients are.
